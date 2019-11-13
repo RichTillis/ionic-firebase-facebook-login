@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">facebook-firebase-login</string>
+    <string name="title_activity_main">facebook-firebase-login</string>
+    <string name="package_name">com.richtillis.fbtest</string>
+    <string name="custom_url_scheme">com.richtillis.fbtest</string>
+    <string name="fb_app_id">413869599285398</string>
+    <string name="fb_app_name">Ionic Login Test</string>
+</resources>

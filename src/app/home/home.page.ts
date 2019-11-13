@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from "@ionic/angular";
+import { AuthService } from "../services/auth.service";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public authService: AuthService, private navCtrl: NavController) {}
+
+  ngOnInit() {
+    this.authService.loggedIn.subscribe(status => {
+      if (!status) {
+        this.navCtrl.navigateBack("/login");
+      }
+    });
+  }
 
 }

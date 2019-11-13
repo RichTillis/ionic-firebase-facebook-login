@@ -1,0 +1,8 @@
+{
+  "appId": "com.richtillis.fbtest",
+  "appName": "facebook-firebase-login",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
